@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="valid.js"></script>
+</head>
+<body onload="document.registration.userid.focus();">
+    <form name='registration' onSubmit="return formValidation();">
+    <font size="6">
+        <center>
+            Registration Form
+        </center>
+    </font>
+    <font size="5">
+        Enter username<input type="text" name="ttUser" maxlength="30"/><br><br>
+        Enter password<input type="password" name="textpass"/><br><br>
+        Address<textarea name="add" rows="5" cols="30"></textarea><br><br>
+        Fields of interest<input type="checkbox" name="cb1"/>Entertainment<input type="checkbox" name="cb2"/>Sports<input type="checkbox" name="cb3"/>News<br><br>
+        Gender<input type="radio" name="gd"/>Male<input type="radio" name="gd"/>Female<br><br>
+        Email<input type="email" name="eml"><br><br>
+        <input type="button" name="v" value="submit"/>
+        Phone number<input type="number" name="pn"/>
+    </font>
+</form>
+</body>
+</html>
